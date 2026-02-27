@@ -5,21 +5,21 @@
 class Tgh < Formula
   desc "Terminal UI for browsing GitHub Actions workflow runs and job logs"
   homepage "https://github.com/philipparndt/tgh"
-  version "0.2.0"
+  version "0.2.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/philipparndt/tgh/releases/download/v0.2.0/tgh_darwin_x86_64.tar.gz"
-      sha256 "bda7ad2ac20f9df4929e2849c0af0cac9ccf8d90b4aeaf176097fddfbe5af11c"
+      url "https://github.com/philipparndt/tgh/releases/download/v0.2.1/tgh_darwin_x86_64.tar.gz"
+      sha256 "f6ccf7908d4dcab4da4fb9a195e9d7331ac7bb2a520cd4365443a5634ad73c10"
 
       define_method(:install) do
         bin.install "tgh"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/philipparndt/tgh/releases/download/v0.2.0/tgh_darwin_arm64.tar.gz"
-      sha256 "3684e4e1c2f163a608a0ec46617df5c1d5c655635876d3b4e1c2857300c25442"
+      url "https://github.com/philipparndt/tgh/releases/download/v0.2.1/tgh_darwin_arm64.tar.gz"
+      sha256 "24fab530de99715cca15318d7a69f2e35ba01de815746b4aec8f0dafa7803e71"
 
       define_method(:install) do
         bin.install "tgh"
@@ -29,15 +29,15 @@ class Tgh < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/philipparndt/tgh/releases/download/v0.2.0/tgh_linux_x86_64.tar.gz"
-      sha256 "6a436ff4e8ddf34ea8b885c21aca989f88d7cc26ff9b04b4882ee8bff7ba3527"
+      url "https://github.com/philipparndt/tgh/releases/download/v0.2.1/tgh_linux_x86_64.tar.gz"
+      sha256 "c29f9333edfbe5e716922599ef67859d3f411f9d48e96383bf0cf67aa8bc3a33"
       define_method(:install) do
         bin.install "tgh"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/philipparndt/tgh/releases/download/v0.2.0/tgh_linux_arm64.tar.gz"
-      sha256 "b63303afb5b14bec4391488b837fa08ef2f52650696e58272c6a791c74686080"
+      url "https://github.com/philipparndt/tgh/releases/download/v0.2.1/tgh_linux_arm64.tar.gz"
+      sha256 "09ef17423dc8f38bc3cca86de6a5c9656dacfe5678a7632112779abee834cca9"
       define_method(:install) do
         bin.install "tgh"
       end
